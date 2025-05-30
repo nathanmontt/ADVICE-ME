@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: "Cormorant Garamond", serif;
+
+    --main-size: 1em;
+    --sec-size: .5em;
+    --thr-size: 2em;
+    --primary: #d4d4df;
+}
+body {
+    background-color: var(--primary);
+}
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--thr-size);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+#project-name {
+    font-size: 3.5em;
+}
+#project-description {
+    font-size: var(--main-size);
+}
+main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--thr-size);
+}
+#cta-generate-advice {
+    font-size: var(--main-size);
+    outline: none;
+    border: 1px solid black;
+    background-color: transparent;
+    padding: var(--main-size);
+    margin-bottom: var(--thr-size);
+    cursor: pointer;
+    transition: all .5s;
+}
+#cta-generate-advice:hover {
+    background-color: black;
+    color: white;
+}
+#store-advice {
+    font-size: var(--thr-size);
+    font-weight: 900;
+}
